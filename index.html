@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skip Talk Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Welcome to Skip Talk Pro</h1>
+      <button id="night-mode-btn">Night Mode</button>
+    </header>
+
+    <section id="auth-section">
+      <button id="login-btn">Login with Google</button>
+    </section>
+
+    <section id="content-section" style="display:none;">
+      <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+      <button id="post-btn">Post</button>
+      <div id="posts-list"></div>
+    </section>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="app.js"></script>
+  <script src="firebase-config.js"></script>
+
+</body>
+</html>
