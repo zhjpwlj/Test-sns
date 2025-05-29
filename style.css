@@ -1,56 +1,57 @@
-
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
-  color: black;
-  margin: 0;
-  padding: 0;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: all 0.3s ease;
 }
 
 header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 button {
-  padding: 10px 20px;
+  padding: 10px;
   margin: 10px;
-  font-size: 16px;
   cursor: pointer;
 }
 
 textarea {
   width: 100%;
-  height: 100px;
   padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 
-#posts-list {
-  margin-top: 20px;
+#content-section {
+  display: block;
 }
 
-#night-mode-btn {
+#auth-section {
+  display: block;
+}
+
+.night-mode {
   background-color: #333;
   color: white;
 }
 
-#login-btn {
-  background-color: #4285F4;
+.night-mode button {
+  background-color: #4CAF50;
   color: white;
 }
 
-#post-btn {
-  background-color: #34A853;
+.night-mode textarea {
+  background-color: #555;
   color: white;
+  border: 1px solid #444;
+}
+
+.night-mode .post {
+  background-color: #444;
+  color: white;
+  border: 1px solid #333;
+  margin: 5px 0;
 }
